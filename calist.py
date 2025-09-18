@@ -104,8 +104,8 @@ BASE_DIR = os.path.dirname(__file__)
 
 # Relative path to the logo
 LOGO_PATH = os.path.join(BASE_DIR, "Logo-CMCB.png") 
-CUSTOMERS_FILE = "sample_customers.csv"
-CALL_LOG_FILE = "call_log.csv"
+CUSTOMERS_FILE = os.path.join(BASE_DIR, "sample_customers.csv")
+CALL_LOG_FILE = os.path.join(BASE_DIR, "call_log.csv")
 
 # Load data from CSV files
 def load_data():
